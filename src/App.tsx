@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import { NAV_ITEMS_IDS } from './constants';
 
 function App() {
+  const onHomeClick = () => {};
+
+  const onItemClick = (id: NAV_ITEMS_IDS) => {
+    switch (id) {
+      case NAV_ITEMS_IDS.about:
+        // scroll about into view
+        break;
+      default:
+        onHomeClick();
+        break;
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header onHomeClick={onHomeClick} onItemClick={onItemClick} />
     </div>
   );
 }
