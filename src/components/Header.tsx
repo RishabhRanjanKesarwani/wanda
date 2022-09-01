@@ -9,7 +9,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import PsychologyAltIcon from '@mui/icons-material/PsychologyAlt';
 import { NAV_ITEMS, NAV_ITEMS_IDS, SAMASSYA } from '../constants';
 
 interface HeaderProps {
@@ -34,7 +33,6 @@ const Header = (props: HeaderProps) => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <PsychologyAltIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -89,7 +87,6 @@ const Header = (props: HeaderProps) => {
               ))}
             </Menu>
           </Box>
-          <PsychologyAltIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap

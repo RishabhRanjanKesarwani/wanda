@@ -1,6 +1,8 @@
+import { Box } from '@mui/system';
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
+import Home from './components/Home';
 import { NAV_ITEMS_IDS } from './constants';
 
 function App() {
@@ -20,6 +22,9 @@ function App() {
   return (
     <div className="App">
       <Header onHomeClick={onHomeClick} onItemClick={onItemClick} />
+      <Box>
+        <Home />
+      </Box>
     </div>
   );
 }

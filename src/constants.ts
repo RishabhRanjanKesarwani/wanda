@@ -10,3 +10,7 @@ export const NAV_ITEMS = [
 ];
 
 export const SAMASSYA = 'SAMASSYA';
+
+export const WHATSAPP_CONTACTS = {
+    ceo: '917007260930',
+}
