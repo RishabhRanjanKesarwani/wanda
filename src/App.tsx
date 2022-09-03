@@ -5,6 +5,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import Home from './components/Home';
+import Progress from './components/Progress';
 import { NAV_ITEMS_IDS } from './constants';
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
       </Box>
       <Box>
         <Contact />
+      </Box>
+      <Box>
+        <Progress />
       </Box>
     </div>
   );

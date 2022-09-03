@@ -68,3 +68,9 @@ export const SOCIAL_MEDIA_LINKS = {
     email: 'mailto:samassyakasamadhan@gmail.com',
     whatsapp: '918810477977',
 }
+
+export const PROGRESS_STATS = {
+    casesSolved: 4,
+    casesWIP: 2,
+    caseTypes: ['Health insurance claim', 'Third party administrator (TPA)', 'Dispute between buyer and property developer', 'Motor insurance claim', 'Home loan subsidy case']
+}
