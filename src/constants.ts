@@ -1,11 +1,26 @@
 export enum NAV_ITEMS_IDS {
     about = 'about',
+    contact = 'contact',
+    progress = 'progress',
+    testimonials = 'testimonials',
 }
 
 export const NAV_ITEMS = [
     {
         id: NAV_ITEMS_IDS.about,
         name: 'About',
+    },
+    {
+        id: NAV_ITEMS_IDS.contact,
+        name: 'Contact us',
+    },
+    {
+        id: NAV_ITEMS_IDS.progress,
+        name: 'Our progress',
+    },
+    {
+        id: NAV_ITEMS_IDS.testimonials,
+        name: 'Testimonials',
     },
 ];
 
@@ -18,7 +33,7 @@ export const ABOUT_CONTENT = {
     },
     about: {
         heading: 'Our story',
-        content: 'Millions of us face trouble with insurance claims and reimbursements from insurance companies. One such problem was encountered by our co-founder. He awaited a claim settlement letter while his claim had settled. A claim settlement is required to get a reimbursement from an insurance company. To retreive the settlement letter, he and his wife did innumerous follow-ups with the insurance company; but all in vain. His friend, the other co-founder, came to his rescue and helped him in resolving the issue. In 8 months, a claim settlement letter was finally received by the couple. This led to a revelation that, in a country like ours, many of us require help in matters of insurance and other related problems. So, here we are to guide you and support you in your, perhaps an unpleasant and an excruciating, journey.',
+        content: 'Millions of us face trouble with insurance claims and reimbursements from insurance companies. One such problem was encountered by our co-founder. He awaited a claim settlement letter while his claim had settled. A claim settlement letter is required to get a reimbursement from an insurance company. To retreive the settlement letter, he and his wife did innumerous follow-ups with the insurance company; but all in vain. His friend, the other co-founder, came to his rescue and helped him in resolving the issue. In 8 months, a claim settlement letter was finally received by the couple. This led to a revelation that, in a country like ours, many of us require help in matters of insurance and other related problems. So, here we are to guide you and support you in your, perhaps an unpleasant and an excruciating, journey.',
     },
     vision: {
         heading: 'We aspire to...',
