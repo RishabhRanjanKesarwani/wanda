@@ -85,14 +85,14 @@ const Contact = () => {
     return (
         <Stack alignItems="center" spacing={4} sx={{backgroundColor: '#175fa7', padding: "20px 50px"}}>
             <Typography variant="h3" sx={{fontFamily: 'Georgia, serif', color: 'white'}}>Contact us</Typography>
-            <Stack spacing={1}>
-                <TextField variant="filled" label="Name*" value={name} error={!!nameError} helperText={nameError} sx={{width: '250px'}} onChange={onNameChange} />
-                <TextField variant="filled" label="Email*" value={email} error={!!emailError} helperText={emailError} sx={{width: '250px'}} onChange={onEmailChange} />
-                <TextField variant="filled" label="Phone number" value={phoneNumber} error={!!phoneNumberError} helperText={phoneNumberError} sx={{width: '250px'}} onChange={onPhoneNumberChange} />
-                <TextareaAutosize minRows={6} maxRows={6} placeholder="Message" value={message} style={{width: '234px', background: 'rgba(27, 88, 149, 0.6)', border: 'none', borderBottom: '2px solid #dde0e3', font: 'inherit', color: 'white', padding: '8px'}} onChange={onMessageChange} />
+            <Stack spacing={1} alignItems="center" width="100%">
+                <TextField variant="filled" label="Name*" value={name} error={!!nameError} helperText={nameError} sx={{width: '100%', maxWidth: '500px'}} onChange={onNameChange} />
+                <TextField variant="filled" label="Email*" value={email} error={!!emailError} helperText={emailError} sx={{width: '100%', maxWidth: '500px'}} onChange={onEmailChange} />
+                <TextField variant="filled" label="Phone number" value={phoneNumber} error={!!phoneNumberError} helperText={phoneNumberError} sx={{width: '100%', maxWidth: '500px'}} onChange={onPhoneNumberChange} />
+                <TextareaAutosize minRows={6} maxRows={6} placeholder="Message" value={message} style={{width: '100%', maxWidth: '484px', background: 'rgba(27, 88, 149, 0.6)', border: 'none', borderBottom: '2px solid #dde0e3', font: 'inherit', color: 'white', padding: '8px'}} onChange={onMessageChange} />
                 <Button variant="contained" color="info" size="large" onClick={onSubmit} disabled={loading}>Submit</Button>
             </Stack>
-            <Stack alignItems="center">
+            <Stack direction={{xs: 'column', sm: 'row', md: 'row', lg: 'row'}} spacing={{xs: 0, sm: 2, md: 2, lg: 2}} alignItems="center">
                 <Stack direction="row" spacing={2}>
                     <IconButton onClick={() => {window.open(SOCIAL_MEDIA_LINKS.facebook, '_blank')}}>
                         <Facebook sx={{color: 'white', fontSize: '60px'}} />
@@ -105,11 +105,11 @@ const Contact = () => {
                     </IconButton>
                 </Stack>
                 <Stack direction="row" spacing={2}>
-                    <IconButton onClick={() => {document.location='mailto:samassyakasamadhan@gmail.com'}}>
-                        <Email sx={{color: 'white', fontSize: '60px'}} />
-                    </IconButton>
                     <IconButton onClick={() => chatOnWhatsApp(SOCIAL_MEDIA_LINKS.whatsapp)}>
                         <WhatsApp sx={{color: 'white', fontSize: '60px'}} />
+                    </IconButton>
+                    <IconButton onClick={() => {document.location='mailto:samassyakasamadhan@gmail.com'}}>
+                        <Email sx={{color: 'white', fontSize: '60px'}} />
                     </IconButton>
                 </Stack>
             </Stack>
