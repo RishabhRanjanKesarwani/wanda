@@ -3,9 +3,11 @@ import React from 'react';
 import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home';
 import Progress from './components/Progress';
+import Testimonials from './components/Testimonials';
 import { NAV_ITEMS_IDS } from './constants';
 
 function App() {
@@ -37,6 +39,10 @@ function App() {
       <Box>
         <Progress />
       </Box>
+      <Box>
+        <Testimonials />
+      </Box>
+      <Footer />
     </div>
   );
 }

@@ -29,7 +29,7 @@ const Progress = () => {
                     <Box sx={{borderRadius: '20px', background: '#175fa7', padding: '20px'}}>
                         <Stack spacing={1}>
                             {PROGRESS_STATS.caseTypes.map(type => (
-                                <Stack spacing={1} direction="row">
+                                <Stack spacing={1} direction="row" key={type}>
                                     <Circle sx={{color: 'white', position: 'relative', top: '5px'}} fontSize="small" />
                                     <Typography variant="h5" sx={{fontFamily: 'Georgia, serif', color: 'white'}}>{type}</Typography>
                                 </Stack>

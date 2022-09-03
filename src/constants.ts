@@ -74,3 +74,40 @@ export const PROGRESS_STATS = {
     casesWIP: 2,
     caseTypes: ['Health insurance claim', 'Third party administrator (TPA)', 'Dispute between buyer and property developer', 'Motor insurance claim', 'Home loan subsidy case']
 }
+
+export const TESTIMONIALS = [
+    {
+        id: 'testimonial1',
+        name: 'Deepika',
+        gender: 'F',
+        image: '',
+        testimonial: 'Constant help and support given by Samassya in resolving the issue of insurance claim settlement letter, relieved from the pain and trouble that was part of day to day life for the past 6 months. I am thankful to them for their services.',
+    },
+    {
+        id: 'testimonial2',
+        name: 'Rajeev',
+        gender: 'M',
+        image: '',
+        testimonial: 'Meri samassya thi ki ek builder k pas mera paisa fasa hua tha. Property cancel krne k 1 saal baad tak bhi paisa wapis nahi aaya. Samassya ke strong follow up and constant support se hi mera refund aa saka. Thank you. Samassya...Ab Samadhan bhi',
+    },
+    {
+        id: 'testimonial3',
+        name: 'Rajat',
+        gender: 'M',
+        image: '',
+        testimonial: 'Samassya ne mera health insurance claim sahi tarah se register krne me madad ki. Unki help se hi mujhe sahi samay me cashless approval mil gaya and mujhpe poore treatment me koi financial pressure nahi pada. End tak mera experience hassle free raha.',
+    },
+    {
+        id: 'testimonial4',
+        name: 'Abhishek',
+        gender: 'M',
+        image: '',
+        testimonial: 'Ek property me paisa daale the jisme builder ne baad me new clauses daal die jo hame acceptable nahi the. Iske chalte humne property cancel kar di par 5 saal baad tak bhi paisa wapis nahi aaya. Samassya ke strong follow up and constant support se hi mera refund aa saka.',
+    },
+]
+
+export const FOOTER_DATA = {
+    email: 'samassyakasamadhan@gmail.com',
+    phoneNumber: '+91 8810477977',
+    copyright: '© 2022 Copyright: Samassya'
+}
