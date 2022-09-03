@@ -41,3 +41,16 @@
   font-family: 'AbrilFatFace';
   src: local('AbrilFatFace'), url(./fonts/AbrilFatface-Regular.ttf) format('truetype');
 }
+
+.MuiInputLabel-root {
+  color: #dde0e3 !important;
+}
+
+.MuiFilledInput-input {
+  color: white !important;
+  border-bottom: 2px solid #dde0e3 !important;
+}
+
+textarea::placeholder {
+  color: #dde0e3;
+}

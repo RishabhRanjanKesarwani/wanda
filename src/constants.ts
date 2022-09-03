@@ -11,10 +11,6 @@ export const NAV_ITEMS = [
 
 export const SAMASSYA = 'SAMASSYA';
 
-export const WHATSAPP_CONTACTS = {
-    ceo: '917007260930',
-}
-
 export const ABOUT_CONTENT = {
     action: {
         heading: 'We keep the hope alive!',
@@ -29,3 +25,46 @@ export const ABOUT_CONTENT = {
         content: 'Bring smile to the faces of people who have had to go through a lot in their difficult times.',
     },
 };
+
+export const API_PARAMS = {
+    path: 'https://6313578ca8d3f673ffc8fe10.mockapi.io/samassya/api/v1/',
+    endpoints: {
+        clients: 'clients'
+    },
+    methods: {
+        get: 'GET',
+        post: 'POST',
+        put: 'PUT',
+        delete: 'DELETE',
+    },
+    headers: {
+        'Content-Type': 'application/json',
+    },
+}
+
+export const API_ERRORS = {
+    getError: {
+        errorCode: 601,
+        errorMessage: 'Some error occurred in getting the data. Please try again after some time.',
+    },
+    postError: {
+        errorCode: 602,
+        errorMessage: 'Some error occurred in saving the data. Please try again after some time.',
+    },
+    putError: {
+        errorCode: 603,
+        errorMessage: 'Some error occurred in updating the data. Please try again after some time.',
+    },
+    deleteError: {
+        errorCode: 604,
+        errorMessage: 'Some error occurred in deleting the data. Please try again after some time.',
+    },
+};
+
+export const SOCIAL_MEDIA_LINKS = {
+    facebook: 'https://www.facebook.com/profile.php?id=100081877393234',
+    twitter: 'https://twitter.com/Samassya1?t=g4u8zOiuSvWhyPWsiCjhAA&s=09',
+    linkedin: 'https://linkedin.com/in/samassya-samadhan-531108241',
+    email: 'mailto:samassyakasamadhan@gmail.com',
+    whatsapp: '918810477977',
+}

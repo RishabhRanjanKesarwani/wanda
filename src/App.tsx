@@ -2,6 +2,7 @@ import { Box } from '@mui/system';
 import React from 'react';
 import './App.css';
 import About from './components/About';
+import Contact from './components/Contact';
 import Header from './components/Header';
 import Home from './components/Home';
 import { NAV_ITEMS_IDS } from './constants';
@@ -28,6 +29,9 @@ function App() {
       </Box>
       <Box>
         <About />
+      </Box>
+      <Box>
+        <Contact />
       </Box>
     </div>
   );
