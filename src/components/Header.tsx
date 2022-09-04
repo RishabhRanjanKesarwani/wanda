@@ -30,7 +30,7 @@ const Header = (props: HeaderProps) => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed" sx={{zIndex: 999}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
