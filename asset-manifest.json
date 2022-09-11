@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/wanda/static/css/main.9399d045.css",
-    "main.js": "/wanda/static/js/main.3318a35b.js",
+    "main.css": "/wanda/static/css/main.c6b018e8.css",
+    "main.js": "/wanda/static/js/main.06091b1f.js",
     "static/js/787.1989a2b7.chunk.js": "/wanda/static/js/787.1989a2b7.chunk.js",
     "static/media/samassya-story.jpeg": "/wanda/static/media/samassya-story.f592ead8878a3f003a9c.jpeg",
     "static/media/AbrilFatface-Regular.ttf": "/wanda/static/media/AbrilFatface-Regular.c2459f7f69cb5eb788d8.ttf",
     "static/media/samassya-vision.jpeg": "/wanda/static/media/samassya-vision.38eba28bef18bd085e1d.jpeg",
     "static/media/samassya-hope.jpeg": "/wanda/static/media/samassya-hope.354a61b46bb9bafafdd7.jpeg",
     "index.html": "/wanda/index.html",
-    "main.9399d045.css.map": "/wanda/static/css/main.9399d045.css.map",
-    "main.3318a35b.js.map": "/wanda/static/js/main.3318a35b.js.map",
+    "main.c6b018e8.css.map": "/wanda/static/css/main.c6b018e8.css.map",
+    "main.06091b1f.js.map": "/wanda/static/js/main.06091b1f.js.map",
     "787.1989a2b7.chunk.js.map": "/wanda/static/js/787.1989a2b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9399d045.css",
-    "static/js/main.3318a35b.js"
+    "static/css/main.c6b018e8.css",
+    "static/js/main.06091b1f.js"
   ]
 }
