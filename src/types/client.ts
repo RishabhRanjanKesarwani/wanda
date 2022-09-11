@@ -3,4 +3,5 @@ export interface Client {
     email: string;
     phoneNumber: string;
     message: string;
+    receiveNewsletter: boolean;
 }

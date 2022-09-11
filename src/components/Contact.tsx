@@ -1,4 +1,4 @@
-import { Button, IconButton, Stack, TextareaAutosize, TextField, Typography } from '@mui/material';
+import { Backdrop, Button, Checkbox, CircularProgress, FormControlLabel, IconButton, Stack, TextareaAutosize, TextField, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import Email from "@mui/icons-material/Email";
 import Facebook from "@mui/icons-material/Facebook";
@@ -16,6 +16,7 @@ const Contact = () => {
     const [email, setEmail] = useState<string>('');
     const [phoneNumber, setPhoneNumber] = useState<string>('');
     const [message, setMessage] = useState<string>('');
+    const [receiveNewsletter, setReceiveNewsletter] = useState<boolean>(true);
     const [nameError, setNameError] = useState<string>('');
     const [emailError, setEmailError] = useState<string>('');
     const [phoneNumberError, setPhoneNumberError] = useState<string>('');
@@ -46,6 +47,10 @@ const Contact = () => {
         setMessage(event.target.value);
     }
 
+    const onReceiveNewsletterChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setReceiveNewsletter(event.target.checked);
+    }
+
     const onSubmit = async () => {
         let isFormComplete = true;
         if (!name) {
@@ -65,7 +70,8 @@ const Contact = () => {
                 name,
                 email,
                 phoneNumber,
-                message
+                message,
+                receiveNewsletter,
             }
             setLoading(true);
             const response = await addClient(data);
@@ -76,7 +82,8 @@ const Contact = () => {
                 setEmail('');
                 setPhoneNumber('');
                 setMessage('');
-                window.alert('We have received your message. A concerned partner will reach out to you shortly.')
+                setReceiveNewsletter(true);
+                window.alert('We have received your message. One of our relationship managers will reach out to you shortly.')
             }
             setLoading(false);
         }
@@ -90,6 +97,7 @@ const Contact = () => {
                 <TextField variant="filled" label="Email*" value={email} error={!!emailError} helperText={emailError} sx={{width: '100%', maxWidth: '500px'}} onChange={onEmailChange} />
                 <TextField variant="filled" label="Phone number" value={phoneNumber} error={!!phoneNumberError} helperText={phoneNumberError} sx={{width: '100%', maxWidth: '500px'}} onChange={onPhoneNumberChange} />
                 <TextareaAutosize minRows={6} maxRows={6} placeholder="Message" value={message} style={{width: '100%', maxWidth: '484px', background: 'rgba(27, 88, 149, 0.6)', border: 'none', borderBottom: '2px solid #dde0e3', font: 'inherit', color: 'white', padding: '8px'}} onChange={onMessageChange} />
+                <FormControlLabel control={<Checkbox checked={receiveNewsletter} onChange={onReceiveNewsletterChange} />} label="I agree to receive newsletters from Samassya" ></FormControlLabel>
                 <Button variant="contained" color="info" size="large" onClick={onSubmit} disabled={loading}>Submit</Button>
             </Stack>
             <Stack direction={{xs: 'column', sm: 'row', md: 'row', lg: 'row'}} spacing={{xs: 0, sm: 2, md: 2, lg: 2}} alignItems="center">
@@ -113,6 +121,9 @@ const Contact = () => {
                     </IconButton>
                 </Stack>
             </Stack>
+            <Backdrop open={loading}>
+                <CircularProgress color="primary" />
+            </Backdrop>
         </Stack>
     );
 };

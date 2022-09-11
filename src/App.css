@@ -54,3 +54,11 @@
 textarea::placeholder {
   color: #dde0e3;
 }
+
+.MuiFormControlLabel-label {
+  color: #dde0e3 !important;
+}
+
+.MuiCheckbox-root {
+  color: #dde0e3 !important;
+}

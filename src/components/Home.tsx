@@ -7,7 +7,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 const Home = () => {
     return (
         <Stack>
-            <Box height={300}>
+            <Box height={360}>
                 <Stack justifyContent="flex-end" direction="column" sx={{height: '100%'}}>
                     <Typography sx={{position: 'relative', top: {xs: '20px', sm: '28px', md: '28px', lg: '28px'}, fontFamily: 'AbrilFatFace', fontSize: {xs: '60px', sm: '96px', md: '96px', lg: '96px'}}}>Samassya</Typography>
                 </Stack>
