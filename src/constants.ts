@@ -28,12 +28,12 @@ export const SAMASSYA = 'SAMASSYA';
 
 export const ABOUT_CONTENT = {
     action: {
-        heading: 'We keep the hope alive!',
-        content: 'We help people who face problems related to insurance claims settlement and reimbursements by giving appropriate guidance and using accurate channels.',
+        heading: 'About us',
+        content: 'Samassya is a company which provides consultative services to individuals and organizations whose documents or hard-earned money is stuck and need assistance to get them released. We keep the hope alive!',
     },
     about: {
         heading: 'Our story',
-        content: 'Millions of us face trouble with insurance claims and reimbursements from insurance companies. One such problem was encountered by our co-founder. He awaited a claim settlement letter while his claim had settled. A claim settlement letter is required to get a reimbursement from an insurance company. To retreive the settlement letter, he and his wife did innumerous follow-ups with the insurance company; but all in vain. His friend, the other co-founder, came to his rescue and helped him in resolving the issue. In 8 months, a claim settlement letter was finally received by the couple. This led to a revelation that, in a country like ours, many of us require help in matters of insurance and other related problems. So, here we are to guide you and support you in your, perhaps an unpleasant and an excruciating, journey.',
+        content: 'Millions of us face trouble with insurance claims and reimbursements from insurance companies. One such problem was encountered by our co-founder. He awaited a claim settlement letter while his claim had settled. A claim settlement letter is required to get a reimbursement from an insurance company. To retreive the settlement letter, he and his wife did numerous follow-ups with the insurance company; but all in vain. His friend, the other co-founder, came to his rescue and helped him in resolving the issue. In 8 months, a claim settlement letter was finally received by the couple. This led to a revelation that, in a country like ours, many of us require help in matters of insurance and other related problems. So, here we are to guide you and support you in your, perhaps an unpleasant and an excruciating, journey.',
     },
     vision: {
         heading: 'We aspire to...',
@@ -80,7 +80,7 @@ export const SOCIAL_MEDIA_LINKS = {
     facebook: 'https://www.facebook.com/profile.php?id=100081877393234',
     twitter: 'https://twitter.com/Samassya1?t=g4u8zOiuSvWhyPWsiCjhAA&s=09',
     linkedin: 'https://linkedin.com/in/samassya-samadhan-531108241',
-    email: 'mailto:samassyakasamadhan@gmail.com',
+    email: 'mailto:info@samassya.in',
     whatsapp: '918810477977',
 }
 
@@ -122,7 +122,7 @@ export const TESTIMONIALS = [
 ]
 
 export const FOOTER_DATA = {
-    email: 'samassyakasamadhan@gmail.com',
-    phoneNumber: '+91 8810477977',
+    email: 'info@samassya.in',
+    phoneNumber: '+91-8810477977',
     copyright: '© 2022 Copyright: Samassya'
 }
